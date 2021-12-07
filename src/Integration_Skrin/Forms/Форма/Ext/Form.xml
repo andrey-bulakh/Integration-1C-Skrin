@@ -1,0 +1,542 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="ИДПользователя" id="1">
+			<DataPath>ИДСессии</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ИДПользователяКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ИДПользователяРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<Pages name="ВходныеПараметры" id="43">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Входные параметры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Входные параметры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ВходныеПараметрыРасширеннаяПодсказка" id="44"/>
+			<ChildItems>
+				<Page name="СправочникСсылка_Контрагенты" id="45">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>КонтрагентыСсылка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Справочник ссылка контрагенты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СправочникСсылка_КонтрагентыРасширеннаяПодсказка" id="46"/>
+					<ChildItems>
+						<InputField name="ФизЛицо" id="49">
+							<DataPath>ФизЛицо</DataPath>
+							<ContextMenu name="ФизЛицоКонтекстноеМеню" id="50"/>
+							<ExtendedTooltip name="ФизЛицоРасширеннаяПодсказка" id="51"/>
+						</InputField>
+						<Button name="ЗаполнитьПоУмолчаниюФизЛицо" id="60">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗаполнитьПоУмолчаниюФизЛицо</CommandName>
+							<ExtendedTooltip name="ЗаполнитьПоУмолчаниюФизЛицоРасширеннаяПодсказка" id="61"/>
+						</Button>
+					</ChildItems>
+				</Page>
+				<Page name="Структура" id="47">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Структура</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Структура</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтруктураРасширеннаяПодсказка" id="48"/>
+					<ChildItems>
+						<InputField name="ФИО" id="10">
+							<DataPath>ФИО</DataPath>
+							<ContextMenu name="ФИОКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ФИОРасширеннаяПодсказка" id="12"/>
+						</InputField>
+						<InputField name="Фамилия" id="20">
+							<DataPath>Фамилия</DataPath>
+							<ContextMenu name="ФамилияКонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="ФамилияРасширеннаяПодсказка" id="22"/>
+						</InputField>
+						<InputField name="Имя" id="23">
+							<DataPath>Имя</DataPath>
+							<ContextMenu name="ИмяКонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="ИмяРасширеннаяПодсказка" id="25"/>
+						</InputField>
+						<InputField name="Отчетство" id="26">
+							<DataPath>Отчество</DataPath>
+							<ContextMenu name="ОтчетствоКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="ОтчетствоРасширеннаяПодсказка" id="28"/>
+						</InputField>
+						<InputField name="ДатаРождения" id="32">
+							<DataPath>ДатаРождения</DataPath>
+							<ContextMenu name="ДатаРожденияКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="ДатаРожденияРасширеннаяПодсказка" id="34"/>
+						</InputField>
+						<InputField name="Паспорт" id="13">
+							<DataPath>Паспорт</DataPath>
+							<ContextMenu name="ПаспортКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="ПаспортРасширеннаяПодсказка" id="15"/>
+						</InputField>
+						<InputField name="ИНН" id="64">
+							<DataPath>ИНН</DataPath>
+							<ContextMenu name="ИННКонтекстноеМеню" id="65"/>
+							<ExtendedTooltip name="ИННРасширеннаяПодсказка" id="66"/>
+						</InputField>
+						<InputField name="ТипДокумента" id="29">
+							<DataPath>ТипДокумента</DataPath>
+							<ContextMenu name="ТипДокументаКонтекстноеМеню" id="30"/>
+							<ExtendedTooltip name="ТипДокументаРасширеннаяПодсказка" id="31"/>
+						</InputField>
+						<InputField name="НомерДокумента" id="38">
+							<DataPath>НомерДокумента</DataPath>
+							<ContextMenu name="НомерДокументаКонтекстноеМеню" id="39"/>
+							<ExtendedTooltip name="НомерДокументаРасширеннаяПодсказка" id="40"/>
+						</InputField>
+						<InputField name="ДатаДокумента" id="35">
+							<DataPath>ДатаДокумента</DataPath>
+							<ContextMenu name="ДатаДокументаКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="ДатаДокументаРасширеннаяПодсказка" id="37"/>
+						</InputField>
+						<Button name="ЗаполнитьПоУмолчаниюСтруктуру" id="62">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗаполнитьПоУмолчаниюСтруктуру</CommandName>
+							<ExtendedTooltip name="ЗаполнитьПоУмолчаниюСтруктуруРасширеннаяПодсказка" id="63"/>
+						</Button>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<Pages name="Методы" id="52">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Методы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Методы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="МетодыРасширеннаяПодсказка" id="53"/>
+			<ChildItems>
+				<Page name="ОбщийМетод" id="54">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Общий метод</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Общий метод</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ОбщийМетодРасширеннаяПодсказка" id="55"/>
+					<ChildItems>
+						<Button name="ПровестиСкринингФизЛица" id="58">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ПровестиСкринингФизЛица</CommandName>
+							<ExtendedTooltip name="ПровестиСкринингФизЛицаРасширеннаяПодсказка" id="59"/>
+						</Button>
+					</ChildItems>
+				</Page>
+				<Page name="МетодыWS" id="56">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Методы WS</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Методы WS</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="МетодыWSРасширеннаяПодсказка" id="57"/>
+					<ChildItems>
+						<Button name="ServiceAuthorization" id="4">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ServiceAuthorization</CommandName>
+							<ExtendedTooltip name="ServiceAuthorizationРасширеннаяПодсказка" id="5"/>
+						</Button>
+						<Button name="PublPersons" id="8">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.PublPersons</CommandName>
+							<ExtendedTooltip name="PublPersonsРасширеннаяПодсказка" id="9"/>
+						</Button>
+						<Button name="CheckPassport" id="16">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.CheckPassport</CommandName>
+							<ExtendedTooltip name="CheckPassportРасширеннаяПодсказка" id="17"/>
+						</Button>
+						<Button name="CheckPassportMVD" id="18">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.CheckPassportMVD</CommandName>
+							<ExtendedTooltip name="CheckPassportMVDРасширеннаяПодсказка" id="19"/>
+						</Button>
+						<Button name="GetInnFl" id="41">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.GetInnFl</CommandName>
+							<ExtendedTooltip name="GetInnFlРасширеннаяПодсказка" id="42"/>
+						</Button>
+						<Button name="ServiceExit" id="6">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ServiceExit</CommandName>
+							<ExtendedTooltip name="ServiceExitРасширеннаяПодсказка" id="7"/>
+						</Button>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.ПроверкаФизЛицЧерезСкрин</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ИДСессии" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ID сессии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ФИО" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ФИО</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Паспорт" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Паспорт</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Фамилия" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фамилия</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Имя" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Отчество" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчество</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТипДокумента" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип документа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаРождения" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата рождения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НомерДокумента" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер документа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаДокумента" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата документа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ФизЛицо" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Физ лицо</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИНН" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ИНН</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ServiceAuthorization" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Service authorization</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Service authorization</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ServiceAuthorization</Action>
+		</Command>
+		<Command name="ServiceExit" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Service exit</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Service exit</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ServiceExit</Action>
+		</Command>
+		<Command name="PublPersons" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Publ persons</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Publ persons</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>PublPersons</Action>
+		</Command>
+		<Command name="CheckPassport" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Check passport</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Check passport</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>CheckPassport</Action>
+		</Command>
+		<Command name="CheckPassportMVD" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Check passport MVD</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Check passport</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>CheckPassportMVD</Action>
+		</Command>
+		<Command name="GetInnFl" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>GetInnFl</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Publ persons</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>GetInnFl</Action>
+		</Command>
+		<Command name="ПровестиСкринингФизЛица" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Провести скрининг физ лица</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Провести скрининг физ лица</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПровестиСкринингФизЛица</Action>
+		</Command>
+		<Command name="ЗаполнитьПоУмолчаниюФизЛицо" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по умолчанию физ лицо</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по умолчанию физ лицо</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьПоУмолчаниюФизЛицо</Action>
+		</Command>
+		<Command name="ЗаполнитьПоУмолчаниюСтруктуру" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по умолчанию структуру</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по умолчанию структуру</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьПоУмолчаниюСтруктуру</Action>
+		</Command>
+	</Commands>
+</Form>
