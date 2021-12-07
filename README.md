@@ -1,2 +1,2 @@
-# Integration_Skrin
-External processing for integration of any configuration of 1C Enterprise with API Skrin. See more &lt;a href="https://kontragent.skrin.ru/api/">here&lt;/a>
+# Integration 1C with API Skrin
+External processing for integration of any configuration of 1C Enterprise with API Skrin. See more <a href="https://kontragent.skrin.ru/api/">here</a>
